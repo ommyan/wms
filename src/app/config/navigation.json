@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "title": "Dashboard",
+
+      "icon": "fa fa-lg fa-fw fa-home",
+      "items": [
+        {
+          "route": "/dashboard/analytics",
+          "title": "Analytics Dashboard"
+        },
+        {
+          "route": "/dashboard/social-wall",
+          "title": "Social Wall"
+        }
+      ]
+    },
+
+    {
+      "title": "Sales",
+      "icon": "fa fa-lg fa-fw fa-cube txt-color-blue",
+      "items": [
+        {
+          "icon": "fa fa-gear",
+          "title": "Delivery Order",
+          "route": "/sales/listdo"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Delivery Request",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Delivery Receipt",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Check Sheet DR",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Delivery Note",
+          "route": "/smartadmin/skins"
+        }
+      ]
+    },
+
+    {
+      "title": "Purchase",
+      "icon": "fa fa-lg fa-fw fa-bar-chart-o",
+      "items": [
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Purchase Order",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "P.O Receiving",
+          "route": "/smartadmin/skins"
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "icon": "fa fa-lg fa-fw fa-bar-chart-o",
+      "items": [
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Return of Goods",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Transfer of Goods",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Stock Adjustment",
+          "route": "/smartadmin/skins"
+        }
+      ]
+    }
+
+  ]
+}
