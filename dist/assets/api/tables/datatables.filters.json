@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "number": "B809D01000",
+      "date": "2018/09/04",
+      "salesman": "Yan Kusyanto",
+      "customer" : "PT Cahaya Abadi",
+      "payment": "T:30",
+      "status" : "Issued"
+    },
+    {
+      "number": "B809D01001",
+      "date": "2018/09/01",
+      "salesman": "Rhoma Irama",
+      "customer" : "Matahari Depstore",
+      "payment": "T:30",
+      "status" : "Issued"
+    },
+    {
+      "number": "B809D01002",
+      "date": "2018/09/05",
+      "salesman": "Rhoma Irama",
+      "customer" : "Ramayana",
+      "payment": "T:30",
+      "status" : "Issued"
+    }
+  ]
+}

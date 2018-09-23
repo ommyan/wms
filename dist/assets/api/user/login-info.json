@@ -1,0 +1,10 @@
+{
+"data": {
+    "username": "Yan Kerren",
+    "picture": "assets/img/avatars/sunny.png",
+    "activity": 12,
+    "ilocation": [
+        { "id": "1" } , {"id": "2"} ,{"id" : "3"}
+    ]
+}
+}
