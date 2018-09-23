@@ -2,83 +2,100 @@ import React from 'react'
 
 import UiValidate from '../../../components/forms/validation/UiValidate'
 
-export default class Login extends React.Component {
+import { connect } from 'react-redux';
+import { login,logout } from '../../../components/user/UserActions';
+
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
+
+    // reset login status
+    // this.props.dispatch(UserActions.logout());
+
+    this.state = {
+        username: '',
+        password: '',
+        submitted: false
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+}
+handleChange=(e)=> {
+  const { name, value } = e.target;
+  this.setState({ [name]: value,
+   });
+}
+
+handleSubmit=(e)=> {
+  e.preventDefault();
+  this.setState({ submitted: true });
+  const { username, password } = this.state;
+  const { dispatch } = this.props;
+  if (username && password) {
+      this.props.dispatch(login(username, password));
+      
+  }
+}
   render() {
     return (
       <div id="extr-page">
-        <header id="header" className="animated fadeInDown">
-
-          <div id="logo-group">
-            <span id="logo"> <img src="assets/img/logo.png" alt="SmartAdmin"/> </span>
-          </div>
-
-          <span id="extr-page-header-space"> <span className="hidden-mobile hiddex-xs">Need an account?</span>&nbsp;<a
-            href="#/register" className="btn btn-danger">Create account</a> </span>
-
-        </header>
+        
         <div id="main" role="main" className="animated fadeInDown">
 
           <div id="content" className="container">
             <div className="row">
+            <div className="row">
+            <div id="logo-group">
+            <span id="logo"> <img src="assets/img/logo.png" alt="Warehouse Management System"/> </span>
+            <span id="logo"> <img src="assets/img/aqua.png" alt="Aqua"/> </span>
+          </div>
+            </div>
               <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
-                <h1 className="txt-color-red login-header-big">SmartAdmin</h1>
-
+            
+            <br></br>
+              <h1 className="txt-color-red login-header-big">Warehouse Management System</h1>
+              <span id="logo" style={{width: '350px'}}> <img src="assets/img/haier.png" alt="Haier"/>
+              PT Haier Sales Indonesia
+              </span>
                 <div className="hero">
                   <div className="pull-left login-desc-box-l">
-                    <h4 className="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin,
+                    <h4 className="paragraph-header">It's Okay to be Smart. Experience the simplicity of Warehouse Management,
                       everywhere you go!</h4>
-
-                    <div className="login-app-icons">
-                      <a href="#/dashboard" className="btn btn-danger btn-sm">Frontend Template</a>
-                      <span> </span>
-                      <a href="#/smartadmin/different-versions.html" className="btn btn-danger btn-sm">Find out more</a>
-                    </div>
+                    
                   </div>
                   <img src="assets/img/demo/iphoneview.png" className="pull-right display-image" alt=""
                        style={{width: '210px'}}/>
                 </div>
-                <div className="row">
-                  <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">About SmartAdmin - Are you up to date?</h5>
-
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                      laudantium, totam rem aperiam, eaque ipsa.
-                    </p>
-                  </div>
-                  <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">Not just your average template!</h5>
-
-                    <p>
-                      Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                      nobis est eligendi voluptatem accusantium!
-                    </p>
-                  </div>
-                </div>
+                
               </div>
               <div className="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                 <div className="well no-padding">
                   <UiValidate>
-                    <form action="#/dashboard" id="login-form" className="smart-form client-form">
+                    <form onSubmit={this.handleSubmit} id="login-form" className="smart-form client-form">
                       <header>
-                        Sign In
+                        Login
                       </header>
                       <fieldset>
                         <section>
-                          <label className="label">E-mail</label>
+                          <label className="label">User Name</label>
                           <label className="input"> <i className="icon-append fa fa-user"/>
-                            <input type="email" name="email" data-smart-validate-input="" data-required="" data-email=""
+                            <input type="text"  name="username" 
                                    data-message-required="Please enter your email address"
-                                   data-message-email="Please enter a VALID email address"/>
+                                   data-message-email="Please enter a VALID email address"
+                                   name="username"  onChange={this.handleChange} 
+                                   />
                             <b className="tooltip tooltip-top-right"><i className="fa fa-user txt-color-teal"/>
-                              Please enter email address/username</b></label>
+                              Please enter username</b></label>
                         </section>
                         <section>
                           <label className="label">Password</label>
                           <label className="input"> <i className="icon-append fa fa-lock"/>
-                            <input type="password" name="password" data-smart-validate-input="" data-required=""
+                            <input type="password"  name="password" data-smart-validate-input="" data-required=""
                                    data-minlength="3" data-maxnlength="20"
-                                   data-message="Please enter your email password"/>
+                                   data-message="Please enter your email password"
+                                   name="password"  onChange={this.handleChange}
+                                   />
                             <b className="tooltip tooltip-top-right"><i className="fa fa-lock txt-color-teal"/> Enter
                               your password</b> </label>
 
@@ -100,18 +117,7 @@ export default class Login extends React.Component {
                     </form>
                   </UiValidate>
                 </div>
-                <h5 className="text-center"> - Or sign in using -</h5>
-                <ul className="list-inline text-center">
-                  <li>
-                    <a href="#" className="btn btn-primary btn-circle"><i className="fa fa-facebook"/></a>
-                  </li>
-                  <li>
-                    <a href="#" className="btn btn-info btn-circle"><i className="fa fa-twitter"/></a>
-                  </li>
-                  <li>
-                    <a href="#" className="btn btn-warning btn-circle"><i className="fa fa-linkedin"/></a>
-                  </li>
-                </ul>
+                
               </div>
             </div>
           </div>
@@ -120,3 +126,11 @@ export default class Login extends React.Component {
     )
   }
 }
+
+const mapStateToProps = (state)=>({
+  UserReducer: state.UserReducer
+})
+
+export default connect(
+  mapStateToProps
+  )(Login)

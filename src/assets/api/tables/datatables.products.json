@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "groupid": "001",
+      "typeid": "001",
+      "itemid": "001",
+      "description": "Freezer",
+      "stockid" : "Sanjaya",
+      "categoryid": "1",
+      "point": "0.00",
+      "price": "1000000",
+      "discountid" : "1",
+      "unit" : "unit",
+      "hoststock" : "1"
+    },
+    {
+      "groupid": "001",
+      "typeid": "001",
+      "itemid": "002",
+      "description": "Kulkas",
+      "stockid" : "Sanjaya",
+      "categoryid": "1",
+      "point": "0.00",
+      "price": "2000000",
+      "discountid" : "1",
+      "unit" : "unit",
+      "hoststock" : "1"
+    },
+    {
+      "groupid": "001",
+      "typeid": "001",
+      "itemid": "003",
+      "description": "Televisi",
+      "stockid" : "Sanjaya",
+      "categoryid": "1",
+      "point": "0.00",
+      "price": "10000000",
+      "discountid" : "1",
+      "unit" : "unit",
+      "hoststock" : "1"
+    },
+  ]
+}

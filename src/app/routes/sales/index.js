@@ -13,9 +13,9 @@ export default {
     }
     ,
     {
-      path: 'listdr',
+      path: 'newdo',
       getComponent(nextState, cb){
-        System.import('./containers/listdo').then((m)=> {
+        System.import('./containers/newdo').then((m)=> {
           cb(null, m.default)
         })
       }

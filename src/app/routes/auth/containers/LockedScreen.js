@@ -9,12 +9,12 @@ export default class LockedScreen extends React.Component {
         <div id="main" role="main">
           <form className="lockscreen animated flipInY" action="#/dashboard/analytics">
             <div className="logo">
-              <h1 className="semi-bold"><img src="assets/img/logo-o.png" alt=""/> SmartAdmin</h1>
+              <h1 className="semi-bold"><img src="assets/img/logo-o.png" alt=""/> W.M.System</h1>
             </div>
             <div>
               <img src="assets/img/avatars/sunny-big.png" alt="" width="120" height="120"/>
               <div>
-                <h1><i className="fa fa-user fa-3x text-muted air air-top-right hidden-mobile"/>John Doe
+                <h1><i className="fa fa-user fa-3x text-muted air air-top-right hidden-mobile"/>Pengguna Login
                   <small><i className="fa fa-lock text-muted"/> &nbsp;Locked</small>
                 </h1>
                 <p className="text-muted">

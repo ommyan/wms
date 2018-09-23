@@ -24,22 +24,31 @@ export default class Stats extends React.Component {
     const {className, ...props} = this.props;
     const stats = this.getStats()
     return (
+
       <div className="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+      <br></br>
         <ul id="sparks" className={className}>
           <li className="sparks-info">
-            <h5> My Income <span className="txt-color-blue"> {stats.income.total}</span></h5>
+            <h5> Revenue <span className="txt-color-blue"> {stats.income.total}</span></h5>
             <Sparkline values={stats.income.values}
                        className="txt-color-blue hidden-mobile hidden-md hidden-sm"> </Sparkline>
           </li>
           <li className="sparks-info">
-            <h5> Site Traffic <span className="txt-color-purple"><i
+            <h5> Profit <span className="txt-color-purple"><i
               className="fa fa-arrow-circle-up"/> {stats.traffic.total}</span></h5>
             <Sparkline values={stats.traffic.values} className="txt-color-purple hidden-mobile hidden-md hidden-sm">
 
             </Sparkline>
           </li>
           <li className="sparks-info">
-            <h5> Site Orders <span className="txt-color-greenDark"><i
+            <h5> Sales <span className="txt-color-greenDark"><i
+              className="fa fa-shopping-cart"/> {stats.orders.total}</span></h5>
+            <Sparkline values={stats.orders.values} className="txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+
+            </Sparkline>
+          </li>
+          <li className="sparks-info">
+            <h5> Customer <span className="txt-color-greenDark"><i
               className="fa fa-shopping-cart"/> {stats.orders.total}</span></h5>
             <Sparkline values={stats.orders.values} className="txt-color-greenDark hidden-mobile hidden-md hidden-sm">
 

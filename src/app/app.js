@@ -4,7 +4,9 @@ import {Provider} from 'react-redux'
 import {syncHistoryWithStore} from 'react-router-redux'
 import {Router, hashHistory} from 'react-router'
 
+
 import store from './store/configureStore'
+import { getlogedIn } from './components/user';
 
 const history = syncHistoryWithStore(hashHistory, store);
 
@@ -28,13 +30,20 @@ const routes = {
     require('./routes/calendar').default,
     require('./routes/forms').default,
     require('./routes/sales').default,
-
-
-
     // comment unused routes
     // this will speed up builds
   ]
 };
+
+// let items : store.getState()
+
+// function requireAuth(nextState, replaceState) {
+//   if (!user.loggedIn())
+//     replaceState({ nextPathname: nextState.location.pathname }, '/sales/listdo')
+// }
+
+
+
 
 ReactDOM.render((
   <Provider store={store}>

@@ -176,7 +176,7 @@ SmartadminConfig.voice_command_auto = false;
  *  ж—Ґжњ¬иЄћ         ['ja-JP']
  *  Lingua latД«na    ['la']
  */
-SmartadminConfig.voice_command_lang = 'en-US';
+SmartadminConfig.voice_command_lang = 'id-ID';
 /*
  *  Use localstorage to remember on/off (best used with HTML Version)
  */
@@ -189,8 +189,11 @@ if (SmartadminConfig.voice_command) {
 
   SmartadminConfig.commands = {
 
-    'show dashboard': {
+    'buka dasbor': {
       type: 'navigate', payload: '/dashboard/analytics'
+    },
+    'delivery order': {
+      type: 'navigate', payload: '/sales/listdo'
     },
     'show social': {
       type: 'navigate', payload: '/dashboard/social-wall'

@@ -5,6 +5,7 @@ import SparklineContainer from  '../../../components/graphs/inline/SparklineCont
 import EasyPieChartContainer from  '../../../components/graphs/inline/EasyPieChartContainer'
 import FlotChart from '../../../components/graphs/flot/FlotChart'
 
+import Revenue from './Revenue'
 
 
 
@@ -61,8 +62,8 @@ export default class LiveStats extends React.Component{
 
                         <div className="row">
                             <div className="col-xs-6 col-sm-6 col-md-12 col-lg-12"><span
-                                className="text"> My Tasks <span
-                                className="pull-right">130/200</span> </span>
+                                className="text"> Delivery Order to Delivery Instruction <span
+                                className="pull-right">65%</span> </span>
 
                                 <div className="progress">
                                     <div className="progress-bar bg-color-blueDark"
@@ -70,8 +71,8 @@ export default class LiveStats extends React.Component{
                                 </div>
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-12 col-lg-12"><span
-                                className="text"> Transfered <span
-                                className="pull-right">440 GB</span> </span>
+                                className="text"> Delivery Instruction to Delivery Receipt <span
+                                className="pull-right">34%</span> </span>
 
                                 <div className="progress">
                                     <div className="progress-bar bg-color-blue"
@@ -79,7 +80,7 @@ export default class LiveStats extends React.Component{
                                 </div>
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-12 col-lg-12"><span
-                                className="text"> Bugs Squashed<span
+                                className="text"> Perfect DO Rate<span
                                 className="pull-right">77%</span> </span>
 
                                 <div className="progress">
@@ -88,20 +89,16 @@ export default class LiveStats extends React.Component{
                                 </div>
                             </div>
                             <div className="col-xs-6 col-sm-6 col-md-12 col-lg-12"><span
-                                className="text"> User Testing <span
-                                className="pull-right">7 Days</span> </span>
+                                className="text"> Perfect Delivery Rate <span
+                                className="pull-right">99%</span> </span>
 
                                 <div className="progress">
                                     <div className="progress-bar bg-color-greenLight"
-                                         style={{width: '84%'}}></div>
+                                         style={{width: '99%'}}></div>
                                 </div>
                             </div>
 
-                            <span className="show-stat-buttons"> <span className="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <a
-                                href="#" className="btn btn-default btn-block hidden-xs">Generate PDF</a> </span> <span
-                                className="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <a href="#"
-                                                                                     className="btn btn-default btn-block hidden-xs">Report
-                                a bug</a> </span> </span>
+                           
 
                         </div>
 
@@ -116,7 +113,7 @@ export default class LiveStats extends React.Component{
                                  data-pie-size="50">
                                 <span className="percent percent-sign">35</span>
                             </div>
-                                        <span className="easy-pie-title"> Server Load <i
+                                        <span className="easy-pie-title"> Received <i
                                             className="fa fa-caret-up icon-color-bad"/> </span>
                             <ul className="smaller-stat hidden-sm pull-right">
                                 <li>
@@ -140,7 +137,7 @@ export default class LiveStats extends React.Component{
                                  data-pie-size="50">
                                 <span className="percent percent-sign">78.9 </span>
                             </div>
-                                        <span className="easy-pie-title"> Disk Space <i
+                                        <span className="easy-pie-title"> Packed <i
                                             className="fa fa-caret-down icon-color-good"/></span>
                             <ul className="smaller-stat hidden-sm pull-right">
                                 <li>
@@ -164,11 +161,11 @@ export default class LiveStats extends React.Component{
                                  data-pie-size="50">
                                 <span className="percent percent-sign">23 </span>
                             </div>
-                                        <span className="easy-pie-title"> Transfered <i
+                                        <span className="easy-pie-title"> Repaired <i
                                             className="fa fa-caret-up icon-color-good"/></span>
                             <ul className="smaller-stat hidden-sm pull-right">
                                 <li>
-                                    <span className="label bg-color-darken">10GB</span>
+                                    <span className="label bg-color-darken">1250</span>
                                 </li>
                                 <li>
                                                 <span className="label bg-color-blueDark"><i
@@ -187,7 +184,7 @@ export default class LiveStats extends React.Component{
                                  data-pie-size="50">
                                 <span className="percent degree-sign">36 <i className="fa fa-caret-up"/></span>
                             </div>
-                            <span className="easy-pie-title"> Temperature <i
+                            <span className="easy-pie-title"> Delivered <i
                                 className="fa fa-caret-down icon-color-good"/></span>
                             <ul className="smaller-stat hidden-sm pull-right">
                                 <li>

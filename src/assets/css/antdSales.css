@@ -1,0 +1,61 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+ .editable-cell {
+    position: relative;
+  }
+  
+  .editable-cell-input-wrapper,
+  .editable-cell-text-wrapper {
+    padding-right: 24px;
+  }
+  
+  .editable-cell-text-wrapper {
+    padding: 5px 24px 5px 5px;
+  }
+  
+  .editable-cell-icon,
+  .editable-cell-icon-check {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .editable-cell-icon {
+    line-height: 18px;
+    display: none;
+  }
+  
+  .editable-cell-icon-check {
+    line-height: 28px;
+  }
+  
+  .editable-cell:hover .editable-cell-icon {
+    display: inline-block;
+  }
+  
+  .editable-cell-icon:hover,
+  .editable-cell-icon-check:hover {
+    color: #108ee9;
+  }
+  
+  .editable-add-btn {
+    margin-bottom: 8px;
+  }

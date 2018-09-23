@@ -30,11 +30,7 @@ export default class LiveFeeds extends React.Component{
                                 className="hidden-mobile hidden-tablet">Live Stats</span></a>
                         </li>
 
-                        <li>
-                            <a data-toggle="tab" href="#s2"><i className="fa fa-facebook" /> <span
-                                className="hidden-mobile hidden-tablet">Social Network</span></a>
-                        </li>
-
+                        
                         <li>
                             <a data-toggle="tab" href="#s3"><i className="fa fa-dollar" /> <span
                                 className="hidden-mobile hidden-tablet">Revenue</span></a>
@@ -51,7 +47,6 @@ export default class LiveFeeds extends React.Component{
 
                             <LiveStats className="tab-pane fade active in padding-10 no-padding-bottom" id="s1"/>
 
-                            <SocialNetwork className="tab-pane fade" id="s2" />
 
                             <Revenue className="tab-pane fade" id="s3" />
 

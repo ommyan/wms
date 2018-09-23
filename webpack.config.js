@@ -11,6 +11,11 @@ const appRoot = path.resolve(srcRoot, 'app');
 
 
 
+["import", {
+  "libraryName": "antd",
+  style: true
+}]
+
 module.exports = (env) => {
 
   const isDev = env == 'development';

@@ -36,25 +36,7 @@ export default class Dashboard extends React.Component {
             </article>
           </div>
 
-
-          <div className="row">
-
-            <article className="col-sm-12 col-md-12 col-lg-6">
-
-              <ChatWidget />
-
-              <FullCalendarWidget />
-
-            </article>
-
-            <article className="col-sm-12 col-md-12 col-lg-6">
-
-              <BirdEyeWidget />
-
-              <TodoWidget />
-
-            </article>
-          </div>
+         
         </WidgetGrid>
       </div>
     )

@@ -21,52 +21,66 @@
       "icon": "fa fa-lg fa-fw fa-cube txt-color-blue",
       "items": [
         {
-          "icon": "fa fa-gear",
+          "icon": "fa fa-picture-o",
           "title": "Delivery Order",
           "route": "/sales/listdo"
         },
         {
           "icon": "fa fa-picture-o",
-          "title": "Delivery Request",
+          "title": "Delivery Instruction",
           "route": "/smartadmin/skins"
         },
         {
           "icon": "fa fa-picture-o",
-          "title": "Delivery Receipt",
-          "route": "/smartadmin/skins"
-        },
-        {
-          "icon": "fa fa-picture-o",
-          "title": "Check Sheet DR",
-          "route": "/smartadmin/skins"
-        },
-        {
-          "icon": "fa fa-picture-o",
-          "title": "Delivery Note",
+          "title": "Delivery Schedule",
           "route": "/smartadmin/skins"
         }
       ]
     },
-
     {
-      "title": "Purchase",
-      "icon": "fa fa-lg fa-fw fa-bar-chart-o",
+      "title": "Product Planning",
+      "icon": "fa fa-cart-plus",
       "items": [
         {
-          "icon": "fa fa-picture-o",
+          "icon": "fa fa-shopping-cart",
           "title": "Purchase Order",
+          "route": "/smartadmin/skins"
+        }
+      ]
+    },
+    {
+      "title": "Logistics",
+      "icon": "fa fa-bank",
+      "items": [
+        
+        
+        {
+          "icon": "fa fa-car",
+          "title": "Delivery Receipt",
           "route": "/smartadmin/skins"
         },
         {
-          "icon": "fa fa-picture-o",
+          "icon": "fa fa fa-keyboard-o",
+          "title": "Check Sheet DR",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-car",
+          "title": "Delivery Note",
+          "route": "/smartadmin/skins"
+        },
+        {
+          "icon": "fa fa-mail-reply",
           "title": "P.O Receiving",
           "route": "/smartadmin/skins"
         }
       ]
     },
+
+    
     {
-      "title": "Inventory",
-      "icon": "fa fa-lg fa-fw fa-bar-chart-o",
+      "title": "Warehouse",
+      "icon": "fa fa-industry",
       "items": [
         {
           "icon": "fa fa-picture-o",
