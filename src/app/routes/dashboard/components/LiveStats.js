@@ -182,7 +182,7 @@ export default class LiveStats extends React.Component{
                         <div className="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                             <div className="easy-pie-chart txt-color-darken" data-percent="36"
                                  data-pie-size="50">
-                                <span className="percent degree-sign">36 <i className="fa fa-caret-up"/></span>
+                                <span className="percent percent-sign">36</span>
                             </div>
                             <span className="easy-pie-title"> Delivered <i
                                 className="fa fa-caret-down icon-color-good"/></span>
@@ -191,7 +191,7 @@ export default class LiveStats extends React.Component{
                                     <span className="label bg-color-red"><i className="fa fa-caret-up"/> 124</span>
                                 </li>
                                 <li>
-                                    <span className="label bg-color-blue"><i className="fa fa-caret-down"/> 40 F</span>
+                                    <span className="label bg-color-blue"><i className="fa fa-caret-down"/> 40 %</span>
                                 </li>
                             </ul>
                             <div className="sparkline txt-color-red hidden-sm hidden-md pull-right"

@@ -9,8 +9,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const srcRoot = path.resolve(__dirname, 'src');
 const appRoot = path.resolve(srcRoot, 'app');
 
-
-
 ["import", {
   "libraryName": "antd",
   style: true
